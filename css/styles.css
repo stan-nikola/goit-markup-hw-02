@@ -258,11 +258,11 @@ body{
 
    }
     .project-inner a:hover {
-        text-decoration:underline;
+        
         color: var(--acent-color);
     }
     .project-inner a:focus {
-        text-decoration:underline;
+        
         color: var(--acent-color);
     }
       
