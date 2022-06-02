@@ -9,38 +9,28 @@ sans-serif; */
     --acent-color: #2196F3;
     --primary-bgr-color:#2F303A;
     --second-bgr-color:#F5F4FA;
+    --third-bgr-color:#ffffff;
     --button-hover-color: #188CE8;
     --footer-text-color: rgba(255, 255, 255, 0.6);
+    --box-shadow-color:rgba(0, 0, 0, 0.15);
     
 }
 
 body{
     font-family: 'Roboto',sans-serif;
     color: var(--primary-text-color);
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    background-color: var(--third-bgr-color);
+    font-size: 14px;
    
     
 }
 
-ul, li{
+ ul, li, a{
     padding: 0;
-}
-.header-page ul,
-.header-page a,
-.project-inner a,
-.logo-footer,
-.features-item,
-.work-item,
-.team-item,
-.filter-inner,
-.project-item,
-.address-item,
-.address-building,
-.address-mail,
-.address-tel {
     list-style: none;
     text-decoration: none;
-}
+} 
 
 .visually-hidden {
     position: absolute;
@@ -59,14 +49,13 @@ ul, li{
 /* Button */
 .button{
     border-radius: 4px;
-    border: 0;
+    border: none;
     font-size: 16px;
-    text-align: center;
-    letter-spacing:inherit;
+    
     font-family: inherit;
     cursor: pointer;  
 }
-.button-studio{
+.hero-btn{
     color: var(--second-text-color);
     background: var(--acent-color);
 
@@ -75,13 +64,15 @@ ul, li{
     line-height: 1.88;
     margin: 0 auto;
     display: block;
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
 }
-.button-portfolio{
+.portfolio-btn{
     color: var(--primary-text-color);
     background: var(--second-bgr-color);
-
+    
     font-weight: 500;
     line-height: 1.62;
+    letter-spacing: 0.03em;
 
 }
 
@@ -89,12 +80,14 @@ ul, li{
 .button:focus{
     background-color: var(--acent-color);
     color: var(--second-text-color);
+   
 }
 
 
-.button-studio:hover,
-.button-studio:focus {
-    background-color: var(--button-hover-color); 
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--button-hover-color);
+   
 }
 
 
