@@ -22,7 +22,9 @@ body{
     letter-spacing: 0.03em;
     background-color: var(--primary-bgr-color);
     font-size: 14px;
+
    
+    /* outline: 2px solid tomato; */
     
 }
 
@@ -118,6 +120,7 @@ body{
     letter-spacing: 0.02em;
 
     color: inherit;
+   
 }
 
 .contact-linc{
