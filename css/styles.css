@@ -6,10 +6,10 @@ sans-serif; */
     --primary-text-color:#212121;
     --second-text-color: #ffffff;
     --third-text-color:#757575;
-    --acent-color: #2196F3;
-    --primary-bgr-color:#2F303A;
-    --second-bgr-color:#F5F4FA;
-    --third-bgr-color:#ffffff;
+    --accent-color: #2196F3;
+    --primary-bgr-color: #ffffff;
+    --secondary-bgr-color:#2F303A;
+    --third-bgr-color:#F5F4FA;
     --button-hover-color: #188CE8;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --box-shadow-color:rgba(0, 0, 0, 0.15);
@@ -20,7 +20,7 @@ body{
     font-family: 'Roboto',sans-serif;
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
-    background-color: var(--third-bgr-color);
+    background-color: var(--primary-bgr-color);
     font-size: 14px;
    
     
@@ -57,7 +57,7 @@ body{
 }
 .hero-btn{
     color: var(--second-text-color);
-    background: var(--acent-color);
+    background: var(--accent-color);
 
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -68,21 +68,21 @@ body{
 }
 .portfolio-btn{
     color: var(--primary-text-color);
-    background: var(--second-bgr-color);
+    background: var(--third-bgr-color);
     
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
-
-}
-
-.button:hover,
-.button:focus{
-    background-color: var(--acent-color);
-    color: var(--second-text-color);
    
+
 }
 
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+    background-color: var(--accent-color);
+    color: var(--second-text-color); 
+    
+}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -105,9 +105,9 @@ body{
 
     color: inherit;      
 }
-.logo .acent,
-.link .acent{
-    color: var(--acent-color);
+.logo .accent,
+.link .accent{
+    color: var(--accent-color);
 }
 
 .nav-page .link,
@@ -129,7 +129,7 @@ body{
    .link:focus,
    .contact-linc:focus
     {
-       color: var(--acent-color);
+       color: var(--accent-color);
    }
   
 
@@ -138,7 +138,7 @@ body{
 
    /* Hero */
    .hero{
-       background-color: var(--primary-bgr-color);
+       background-color: var(--secondary-bgr-color);
 
    }
 
@@ -191,7 +191,7 @@ body{
    /* Team */
 
    .team{
-       background-color: var(--second-bgr-color);
+       background-color: var(--third-bgr-color);
    }
 
    .team-item{       
@@ -259,7 +259,7 @@ body{
 
    /* Footer */
    .footer-page{
-       background-color: var(--primary-bgr-color);
+       background-color: var(--secondary-bgr-color);
    }
    
    .logo-footer{
@@ -287,6 +287,6 @@ body{
     }
     .address-inner a:hover,
     .address-inner a:focus{       
-        color: var(--acent-color);
+        color: var(--accent-color);
     }
   
